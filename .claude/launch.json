@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dental-demo",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "dev",
+        "-p",
+        "3002"
+      ],
+      "port": 3002
+    }
+  ]
+}
