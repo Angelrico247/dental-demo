@@ -130,7 +130,7 @@ export default function NosotrosPageClient() {
 
       {/* Tecnologia */}
       <section className="px-3 pb-10 sm:px-5 lg:px-7">
-        <div className="rounded-card bg-ink px-6 py-16 sm:px-10 lg:px-14">
+        <div className="rounded-card bg-[#3B82F6] px-6 py-16 sm:px-10 lg:px-14">
           <div className="mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Tecnología"

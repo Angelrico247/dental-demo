@@ -8,7 +8,7 @@ import { IconSparkle } from "../../../components/icons";
 const FOTO = "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1800";
 
 const GRADIENTE =
-  "linear-gradient(90deg, rgb(30 29 30 / 0.90) 0%, rgb(30 29 30 / 0.70) 40%, rgb(30 29 30 / 0.30) 100%)";
+  "linear-gradient(90deg, rgb(59 130 246 / 0.92) 0%, rgb(59 130 246 / 0.78) 40%, rgb(59 130 246 / 0.32) 100%)";
 
 interface CtaBannerSectionProps {
   onAgendar?: () => void;

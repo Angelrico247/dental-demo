@@ -270,7 +270,7 @@ export const AgendarCitaModal: React.FC<AgendarCitaModalProps> = ({ isOpen, onCl
                         type="checkbox"
                         checked={draft.esPrimeraVisita}
                         onChange={(e) => handleChange("esPrimeraVisita", e.target.checked)}
-                        className="h-4 w-4 cursor-pointer accent-[#3144d9]"
+                        className="h-4 w-4 cursor-pointer accent-[#3b82f6]"
                       />
                       Es mi primera visita a la clínica
                     </label>

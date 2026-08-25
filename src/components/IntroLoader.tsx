@@ -1,9 +1,9 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useState } from "react";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
-import { IconTooth } from "./icons";
 import { CLINICA } from "../features/clinic/data/clinicaData";
 
 const IntroContext = createContext(false);
@@ -41,17 +41,22 @@ export function IntroProvider({ children }: { children: React.ReactNode }) {
             initial={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-ink"
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-white"
           >
             <motion.div
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
-              className="flex items-center gap-3 text-white"
+              className="flex flex-col items-center gap-4 text-ink"
             >
-              <span className="grid h-11 w-11 place-items-center rounded-full bg-brand">
-                <IconTooth className="h-6 w-6" />
-              </span>
+              <Image
+                src="/brand/logo-icon-navy.png"
+                alt=""
+                width={112}
+                height={112}
+                className="h-24 w-24 object-contain sm:h-28 sm:w-28"
+                priority
+              />
               <span className="text-2xl font-light tracking-tight">{CLINICA.nombre}</span>
             </motion.div>
           </motion.div>

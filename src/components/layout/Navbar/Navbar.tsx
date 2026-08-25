@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { CLINICA, NAV_LINKS, NAV_MAS } from "../../../features/clinic/data/clinicaData";
-import { IconChevronDown, IconClose, IconMenu, IconTooth } from "../../icons";
+import { IconChevronDown, IconClose, IconMenu } from "../../icons";
 import { Button } from "../../ui/Button/Button";
 
 interface NavbarProps {
@@ -31,7 +32,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const barra = esGlass
     ? "rounded-full border border-white/20 bg-white/10 px-3 py-2 backdrop-blur-lg"
-    : "px-4 sm:px-6 lg:px-8";
+    : "px-4 py-3 sm:px-6 lg:px-8";
 
   const textoLink = esGlass
     ? "text-white/80 hover:text-white"
@@ -49,11 +50,18 @@ export const Navbar: React.FC<NavbarProps> = ({
           aria-label={`${CLINICA.nombre} — inicio`}
         >
           <span
-            className={`grid h-9 w-9 place-items-center rounded-full ${
-              esGlass ? "bg-white/15 text-white backdrop-blur" : "bg-brand text-white"
+            className={`grid h-10 w-10 shrink-0 place-items-center rounded-full ${
+              esGlass ? "bg-white/85 backdrop-blur" : "bg-white shadow-sm"
             }`}
           >
-            <IconTooth className="h-5 w-5" />
+            <Image
+              src="/brand/logo-icon-navy.png"
+              alt=""
+              width={28}
+              height={28}
+              className="h-6 w-6 object-contain"
+              priority
+            />
           </span>
           <span className="hidden text-base font-medium tracking-tight sm:block">
             {CLINICA.nombre}

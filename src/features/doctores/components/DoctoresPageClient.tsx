@@ -57,7 +57,7 @@ export default function DoctoresPageClient() {
 
       {/* Franja de credenciales */}
       <section className="px-3 pb-10 sm:px-5 lg:px-7">
-        <div className="rounded-card bg-ink px-6 py-14 sm:px-10 lg:px-14">
+        <div className="rounded-card bg-[#3B82F6] px-6 py-14 sm:px-10 lg:px-14">
           <div className="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-4">
             {MOCK_ESTADISTICAS.map((e, idx) => (
               <motion.div

@@ -8,15 +8,15 @@ import { IconSparkle } from "../../../components/icons";
 import { getCalificacionPromedio, RESENAS } from "../../clinic/data/clinicaData";
 import { MOCK_TESTIMONIOS } from "../../clinic/data/testimoniosData";
 
-const FOTO_HERO = "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=2000";
+const FOTO_HERO = "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2000";
 
-/* Pesado a la izquierda y desvaneciendo a la derecha, para que el rostro siga visible */
+/* Pesado a la izquierda y desvaneciendo a la derecha, con tinte azul vivido */
 const GRADIENTE_DESKTOP =
-  "linear-gradient(90deg, rgb(30 29 30 / 0.88) 0%, rgb(30 29 30 / 0.72) 28%, rgb(30 29 30 / 0.35) 58%, rgb(30 29 30 / 0.08) 100%), linear-gradient(0deg, rgb(30 29 30 / 0.45) 0%, transparent 45%)";
+  "linear-gradient(90deg, rgb(59 130 246 / 0.95) 0%, rgb(59 130 246 / 0.86) 28%, rgb(59 130 246 / 0.55) 58%, rgb(59 130 246 / 0.22) 100%), linear-gradient(0deg, rgb(59 130 246 / 0.5) 0%, transparent 45%)";
 
-/* En movil el texto cae encima del rostro, asi que el gradiente va de arriba a abajo */
+/* En movil el texto cae encima de la foto, asi que el gradiente va de arriba a abajo */
 const GRADIENTE_MOVIL =
-  "linear-gradient(180deg, rgb(30 29 30 / 0.80) 0%, rgb(30 29 30 / 0.55) 45%, rgb(30 29 30 / 0.85) 100%)";
+  "linear-gradient(180deg, rgb(59 130 246 / 0.92) 0%, rgb(59 130 246 / 0.76) 45%, rgb(59 130 246 / 0.94) 100%)";
 
 const ETIQUETAS = ["Servicios", "Tecnología", "Equipo", "Sin dolor", "Doctores"];
 
@@ -73,9 +73,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onAgendar }) => {
           className="absolute inset-0"
           style={{
             backgroundImage: `url('${FOTO_HERO}')`,
-            // Ampliamos y desplazamos para dejar el rostro a la derecha, libre del titular
-            backgroundSize: "auto 135%",
-            backgroundPosition: "22% 22%",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
         />

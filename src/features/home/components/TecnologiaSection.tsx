@@ -8,7 +8,7 @@ import { TECNOLOGIA } from "../../clinic/data/clinicaData";
 export function TecnologiaSection() {
   return (
     <section className="px-3 py-10 sm:px-5 lg:px-7">
-      <div className="rounded-card bg-ink px-6 py-16 sm:px-10 lg:px-14 lg:py-20">
+      <div className="rounded-card bg-[#3B82F6] px-6 py-16 sm:px-10 lg:px-14 lg:py-20">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             eyebrow="Tecnología"

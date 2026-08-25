@@ -17,7 +17,7 @@ import { formatDuracion, formatPrecio, formatSesiones } from "../../clinic/data/
 import { useCita } from "../../appointments/components/CitaProvider";
 
 const GRADIENTE =
-  "linear-gradient(90deg, rgb(30 29 30 / 0.88) 0%, rgb(30 29 30 / 0.70) 45%, rgb(30 29 30 / 0.25) 100%)";
+  "linear-gradient(90deg, rgb(59 130 246 / 0.9) 0%, rgb(59 130 246 / 0.76) 45%, rgb(59 130 246 / 0.3) 100%)";
 
 interface Props {
   servicio: Servicio;
