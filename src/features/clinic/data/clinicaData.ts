@@ -44,10 +44,10 @@ export function getCalificacionPromedio(): string {
 }
 
 export const MOCK_ESTADISTICAS: Estadistica[] = [
-  { id: "e1", valor: "12", etiqueta: "Años cuidando sonrisas", sufijo: "+" },
-  { id: "e2", valor: "8,000", etiqueta: "Pacientes atendidos", sufijo: "+" },
-  { id: "e3", valor: getCalificacionPromedio(), etiqueta: "Calificación promedio" },
-  { id: "e4", valor: "6", etiqueta: "Especialistas certificados" },
+  { id: "e1", valor: "00", etiqueta: "Años cuidando sonrisas", sufijo: "+" },
+  { id: "e2", valor: "0,000", etiqueta: "Pacientes atendidos", sufijo: "+" },
+  { id: "e3", valor: "0.0", etiqueta: "Calificación promedio" },
+  { id: "e4", valor: "0", etiqueta: "Especialistas certificados" },
 ];
 
 export const NAV_LINKS: { href: string; label: string }[] = [

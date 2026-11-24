@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import { IntroProvider } from "../components/IntroLoader";
 import { CitaProvider } from "../features/appointments/components/CitaProvider";
 import "./globals.css";
+import DemoNotice from "../components/DemoNotice";
 
 // Poppins es una familia estatica: next/font exige los pesos explicitos
 const poppins = Poppins({
@@ -12,6 +13,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
+  robots: { index: false, follow: false },
   title: "Dental Clinic | Clínica dental en Zapopan",
   description:
     "Clínica dental moderna en Zapopan, Jalisco. Odontología general, ortodoncia invisible, implantes y estética dental sin dolor.",
@@ -27,6 +29,7 @@ export default function RootLayout({
       <body>
         <IntroProvider>
           <CitaProvider>{children}</CitaProvider>
+          <DemoNotice />
         </IntroProvider>
       </body>
     </html>
