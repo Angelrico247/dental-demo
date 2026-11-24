@@ -3,13 +3,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { IconStar } from "../../../components/icons";
-import { getCalificacionPromedio, RESENAS } from "../../clinic/data/clinicaData";
 import { getTestimoniosDestacados } from "../../clinic/data/testimoniosData";
 import { formatFecha } from "../../clinic/data/formatters";
 
 export function TestimoniosSection() {
   const testimonios = getTestimoniosDestacados(3);
-  const promedio = getCalificacionPromedio();
 
   return (
     <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
@@ -21,16 +19,9 @@ export function TestimoniosSection() {
         className="text-center"
       >
         <p className="mb-4 text-eyebrow font-medium uppercase text-mist">Lo que dicen</p>
-        <div className="flex items-baseline justify-center gap-3">
-          <span className="text-6xl font-light leading-none text-ink">{promedio}</span>
-          <div className="flex gap-0.5 text-brand">
-            {[0, 1, 2, 3, 4].map((i) => (
-              <IconStar key={i} className="h-4 w-4" />
-            ))}
-          </div>
-        </div>
+        <h2 className="text-5xl font-light leading-none text-ink">Lorem ipsum</h2>
         <p className="mt-4 text-sm text-mist">
-          Promedio de {RESENAS.total} reseñas verificadas de pacientes
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
       </motion.div>
 

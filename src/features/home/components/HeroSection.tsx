@@ -5,7 +5,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Navbar } from "../../../components/layout/Navbar/Navbar";
 import { useIntroReady } from "../../../components/IntroLoader";
 import { IconSparkle } from "../../../components/icons";
-import { getCalificacionPromedio, RESENAS } from "../../clinic/data/clinicaData";
 import { MOCK_TESTIMONIOS } from "../../clinic/data/testimoniosData";
 
 const FOTO_HERO = "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2000";
@@ -38,7 +37,6 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onAgendar }) => {
   const introReady = useIntroReady();
-  const calificacion = getCalificacionPromedio();
   const avatares = MOCK_TESTIMONIOS.slice(0, 4);
 
   // El navbar del hero es glass y vive dentro de la tarjeta, asi que al pasarla no queda
@@ -142,7 +140,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onAgendar }) => {
               className="w-full shrink-0 rounded-panel border border-white/25 bg-white/10 p-6 shadow-lift backdrop-blur-xl lg:w-72"
             >
               <div className="flex items-start gap-1">
-                <span className="text-5xl font-light leading-none text-white">{calificacion}</span>
+                <span className="text-5xl font-light leading-none text-white">Lorem</span>
                 <IconSparkle className="mt-1 h-4 w-4 text-white/70" />
               </div>
               <div className="mt-5 flex items-center gap-3">
@@ -160,13 +158,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onAgendar }) => {
                   </span>
                 </div>
                 <p className="text-xs leading-tight text-white/80">
-                  Pacientes
+                  Lorem ipsum
                   <br />
-                  felices
+                  dolor sit
                 </p>
               </div>
               <p className="mt-4 border-t border-white/15 pt-3 text-xs text-white/55">
-                {RESENAS.total} reseñas verificadas
+                Lorem ipsum dolor sit amet
               </p>
             </motion.div>
           </div>
